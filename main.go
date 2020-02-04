@@ -47,7 +47,7 @@ func serveImageHandler(w http.ResponseWriter, r *http.Request) {
 func main() {
 	config = "1"
 	http.HandleFunc("/switch", switchHandler)
-	http.HandleFunc("/image", serveImageHandler)
+	http.HandleFunc("/gambar.jpg", serveImageHandler)
 
 	log.Println("Served at :8474")
 	log.Fatal(http.ListenAndServe(":8474", nil))
