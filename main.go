@@ -32,6 +32,7 @@ func switchHandler(w http.ResponseWriter, r *http.Request, _ httprouter.Params) 
 		config = "original"
 	}
 
+	log.Println(config)
 	fmt.Fprintf(w, config)
 }
 
